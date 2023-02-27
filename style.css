@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'good time';
+    src: url('fontes/good\ times\ rg.otf') format('Opentype');
+}
+
+@font-face {
+    font-family: 'ultrasound';
+    src: url('fontes/HFF\ Ultrasound.ttf') format('truetype');
+}
+
+:root {
+    --font-00:'good time';
+    --font-01:'ultrasound';
+
+    --cor-00:#202426;
+    --cor-01:#6C733D;
+    --cor-02:#9DA65D;
+    --cor-03:#8C8C88;
+    --cor-04:#F2F2F2;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.537);
+}
+
+header {
+    color: var(--cor-00);
+    background-image: linear-gradient(to bottom, var(--cor-00), var(--cor-03), transparent);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    text-align: center;
+    
+}
+
+header > h1 {
+    font-family: var(--font-00);
+    font-size: 5vw;
+}
+
+header > p {
+    font-family:  var(--font-00);
+    font-size: 2.2vw;
+}
+
+p > a {
+    text-decoration: none;
+    color: var(--cor-00);
+}
+
+p > a:hover {
+    text-decoration: underline;
+}
+
+main > section > p {
+    padding-top: 10vh;
+    padding-left: 5vw;
+    padding-bottom: 10vh;
+    font-family: var(--font-01);
+    font-size: 3vw;
+    line-height: 7vh;
+    font-weight: bolder;
+}
+
+main > section.background-01 {
+    background-image: url(imagens/background-01.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 10px 50px 10px;
+}
+
+main > section.background-01 > p {
+    background-color: rgba(142, 139, 139, 0.255);
+    min-width: 320px;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+main > section.background-02 {
+    background-image: url(imagens/background-02.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 10px 50px 10px;
+}
+
+main > section.background-02 > p {
+    background-color: rgba(142, 139, 139, 0.255);
+    min-width: 320px;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+footer {
+   padding: 15px;
+   background-color: var(--cor-04);
+   color:  var(--cor-00);
+}
+
+footer > p {
+    text-align: center;
+    font-family: sans-serif;
+    font
+}
